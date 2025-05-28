@@ -1,1 +1,1 @@
-# assignment-week-4
+# nus-assignments
