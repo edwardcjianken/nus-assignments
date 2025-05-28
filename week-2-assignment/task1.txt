@@ -1,0 +1,81 @@
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia
+$ mkdir projectrepo
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia
+$ cd projectrepo
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo
+$ git init
+Initialized empty Git repository in C:/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo/.git/
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ nano README.md
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git commit -m "First commit to add readme file."
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Edward Chia@Edward-Laptop.(none)')
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git config --global user.email "edwardc.jianken@gmail.com"
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git config --global user.name "Edward Chia"
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.editor="C:\\Program Files\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+init.defaultbranch=main
+user.email=edwardc.jianken@gmail.com
+user.name=Edward Chia
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git commit -m "First commit to add readme file."
+[main (root-commit) a903c38] First commit to add readme file.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md

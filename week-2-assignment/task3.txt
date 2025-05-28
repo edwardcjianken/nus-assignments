@@ -1,0 +1,107 @@
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia
+$ mkdir conflictrepo
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia
+$ cd conflictrepo
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo  
+$ git init
+Initialized empty Git repository in C:/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git add index.html
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git commit -m "added index.html as first commmit"
+[main (root-commit) 3ebe5e6] added index.html as first commmit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git branch d_edwardChia
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git checkout d_edwardChia
+Switched to branch 'd_edwardChia'
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardChia)
+$ git add index.html
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardChia)
+$ git status
+On branch d_edwardChia
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardChia)
+$ git commit -m "made change from d_edwardChia branch"
+[d_edwardChia 0e45f24] made change from d_edwardChia branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardChia)
+$ git checkout main
+Switched to branch 'main'
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git add index.html
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git commit -m "made change from main branch"
+[main 1fcff8a] made change from main branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main)
+$ git checkout d_edwardchia
+Switched to branch 'd_edwardchia'
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardchia)
+$ git add index.html
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardchia)
+$ git commit -m "changed from dev branch"
+On branch d_edwardchia
+nothing to commit, working tree clean
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardchia)
+$ git add index.html
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardchia)
+$ git commit -m "changed from dev branch"
+[d_edwardchia d1ce09a] changed from dev branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (d_edwardchia)
+$ git checkout main
+Switched to branch 'main'
+
+main)
+$ git merge d_edwardChia
+main)
+$ git merge d_edwardChia
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main|MERGING)
+$ git merge d_edwardChia
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/conflictrepo (main|MERGING)
+$ git commit -m "resolved merge conflict"
+[main 87f90aa] resolved merge conflict

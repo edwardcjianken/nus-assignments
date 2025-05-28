@@ -1,0 +1,36 @@
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git branch featurex
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (mEdward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git branch
+  featurex
+ain)
+$ git branch
+  featurex
+  featurex
+* main
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git checkout featurex
+Switched to branch 'featurex'
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (featurex)
+$ git add feature.py
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (featurex)
+$ git status
+On branch featurex
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   feature.py
+
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (featurex)
+$ git commit -m "Add feature.py into projectrepo"
+[featurex 052f9d1] Add feature.py into projectrepo
+ 1 file changed, 2 insertions(+)
+ create mode 100644 feature.py
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (featurex)
+$ git checkout main
+Switched to branch 'main'
