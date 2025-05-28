@@ -1,0 +1,15 @@
+{
+  "name": "module-5_week-5_required-assignment_edward-chia",
+  "version": "1.0.0",
+  "main": "task1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

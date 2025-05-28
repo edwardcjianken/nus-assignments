@@ -1,0 +1,124 @@
+/* Base styles for mobile devices (<= 767px) (I referred to Bootstrap framework)*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-section {
+  background-color: rgb(255, 255, 114);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+nav > ul > li {
+  list-style-type: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #fcf8d9;
+  padding: 1rem 4rem;
+}
+
+section,
+article {
+  background-color: white;
+  min-width: 70vw;
+  border: 1px solid #efebd0;
+  border-radius: 5%;
+  padding: 10px 30px;
+}
+
+footer {
+  background-color: rgb(255, 255, 114);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsive for tablets (>= 768px) (I referred to Bootstrap framework)*/
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive for tablets (>= 992px) (I referred to Bootstrap framework)*/
+
+@media (min-width: 992px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section,
+  article {
+    min-width: 30vw;
+  }
+}
+
+/* Interactive elements */
+
+.nav-menu a {
+  transition: color 0.4s ease;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+}
+
+.nav-menu a:hover {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+.nav-menu a:focus {
+  border: 5px dashed orange;
+}
+
+.nav-menu a:active {
+  background-color: rgb(255, 111, 0);
+}
