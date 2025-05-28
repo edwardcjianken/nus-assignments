@@ -1,0 +1,135 @@
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia
+$ ls
+conflictrepo/  projectrepo/  task1.txt  task2.txt  task3.txt  task3-merge-conflict-screenshot.png  task4.txt
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia
+$ cd projectrepo
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git remote add origin https://github.com/edwardcjianken1/projectrepo.git
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git push remote --all
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git push origin --all
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 561 bytes | 561.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/edwardcjianken1/projectrepo.git
+ * [new branch]      featurex -> featurex
+ * [new branch]      main -> main
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git branch collaborator_update
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git branch
+  collaborator_update
+  featurex
+* main
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git checkout collaborotor_update
+error: pathspec 'collaborotor_update' did not match any file(s) known to git
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git checkout collaborator_update
+Switched to branch 'collaborator_update'
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (collaborator_update)
+$ git push origin --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'collaborator_update' on GitHub by visiting:
+remote:      https://github.com/edwardcjianken1/projectrepo/pull/new/collaborator_update
+remote:
+To https://github.com/edwardcjianken1/projectrepo.git
+ * [new branch]      collaborator_update -> collaborator_update
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (collaborator_update)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/edwardcjianken1/projectrepo.git
+  Push  URL: https://github.com/edwardcjianken1/projectrepo.git
+  HEAD branch: main
+  Remote branches:
+    collaborator_update tracked
+    featurex            tracked
+    main                tracked
+  Local refs configured for 'git push':
+    collaborator_update pushes to collaborator_update (up to date)
+    featurex            pushes to featurex            (up to date)
+    main                pushes to main                (up to date)
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (collaborator_update)
+$ git pull 
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> collaborator_update
+
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (collaborator_update)
+$ git checkout main
+Switched to branch 'main'
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git fetch origin
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git pull origin collaborator_update
+From https://github.com/edwardcjianken1/projectrepo
+ * branch            collaborator_update -> FETCH_HEAD
+Already up to date.
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git merge origin/collaborator_update
+Already up to date.
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git push origin mainn
+error: src refspec mainn does not match any
+error: failed to push some refs to 'https://github.com/edwardcjianken1/projectrepo.git'
+
+Edward Chia@Edward-Laptop MINGW64 /c/Personal/code/nus-course/web-projects/assignments/Module 2_Week 2_Required Assignment_Edward Chia/projectrepo (main)
+$ git push origin  main
+Everything up-to-date
