@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-# nus-assignments
-=======
-# assignment-week-3
->>>>>>> week3/staging
+# assignment-week-4
