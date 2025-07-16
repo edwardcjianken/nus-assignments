@@ -1,0 +1,19 @@
+Task 1
+1a) 
+- Component-based Architecture
+React apps are built using reusable pieces called components. Each component handles its own logic and UI, and can be mix and matched without starting 
+from scratch every time.
+
+- Virtual DOM
+Instead of re-rendering the entire webpage every time something changes, React keeps a copy of the page called the Virtual DOM. When there are any state changes, 
+React compares this copy to the real page and only re-renders what's needed. 
+
+
+- Unidirectional Data Flow
+Data in React moves in one direction, from parent components down to their children. This keeps thing predictable and debuggable.
+
+1b)
+These features make React ideal for modern web apps, because of the following reasons:
+- Easy to scale. When a new feature is needed, just plug in a new component.
+- Quicker rendering. Due to the Virtual DOM being used, the app looks a lot more snappy with dynamic content.
+- One-way data flow means fewer bugs and easier debugging.

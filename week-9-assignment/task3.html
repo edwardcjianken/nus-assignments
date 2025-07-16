@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic React App</title>
+
+    <!-- React, ReactDOM, and Babel via CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/babel-standalone@6/babel.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Div with id of "root" -->
+    <div id="root"></div>
+
+    <!-- JSX component and rendering logic-->
+    <script type="text/babel">
+      function GreetingComponent() {
+        return <h1>Hello, Edward!</h1>;
+      }
+
+      ReactDOM.render(<GreetingComponent />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
