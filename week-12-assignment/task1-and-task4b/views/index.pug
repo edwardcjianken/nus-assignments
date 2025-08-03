@@ -1,0 +1,18 @@
+//- views/index.pug
+doctype html
+html
+  head
+    title Users List
+  body
+    h1 Users
+    ul
+      each user in users
+        li
+          span= user.name
+          form(action="/update/" + user.id method="post" style="display: inline; margin-left: 10px;")
+            input(type="text" name="name" value=user.name placeholder="Edit name")
+            button(type="submit") Update
+          a(href="/delete/" + user.id onclick="return confirm('Are you sure?')" style="margin-left: 10px; color: red;") Delete
+    form(action="/add/" method="get")
+      input(type="text" name="name" placeholder="Add user")
+      button(type="submit") Add
